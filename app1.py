@@ -20,7 +20,7 @@ def steel_prediction(input_data):
     # the font and background color, the padding and the text to be displayed
     html_temp = """
     <div style ="background-color:pink;padding:13px">
-    <h1 style ="color:black;text-align:center;font-family:Lucida Calligraphy; color:Brown; font-size: 24px;">Steel Industry Load Prediction ML App </h1>
+    <h1 style ="color:black;text-align:center;font-family:Lucida Calligraphy; color:Brown; font-size: 18px;">Load Prediction of Steel Plant</h1>
     </div>
     """  
     # this line allows us to display the front end aspects we have 
