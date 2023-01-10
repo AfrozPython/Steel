@@ -15,19 +15,6 @@ loaded_model = pickle.load(open('df.sav', 'rb'))
 
 
 def steel_prediction(input_data):
-    
-    
-    # the font and background color, the padding and the text to be displayed
-    html_temp = """
-    <div style ="background-color:pink;padding:13px">
-    <h1 style ="color:black;text-align:center;font-family:Lucida Calligraphy; color:Brown; font-size: 18px;">Load Prediction of Steel Plant</h1>
-    </div>
-    """  
-    # this line allows us to display the front end aspects we have 
-    # defined in the above code
-    st.markdown(html_temp, unsafe_allow_html = True)
-
-    
 
     # changing the input_data to numpy array
     input_data_as_numpy_array = np.asarray(input_data)
@@ -46,6 +33,16 @@ def steel_prediction(input_data):
         return 'Maximum Load'
     
 def main():
+    
+    # the font and background color, the padding and the text to be displayed
+    html_temp = """
+    <div style ="background-color:pink;padding:13px">
+    <h1 style ="color:black;text-align:center;font-family:Lucida Calligraphy; color:Brown; font-size: 22px;">Steel Plant Load Prediction With Artificial Intelligence</h1>
+    </div>
+    """  
+    # this line allows us to display the front end aspects we have 
+    # defined in the above code
+    st.markdown(html_temp, unsafe_allow_html = True)
     
     Usage_kWh = st.number_input("Usage_kWh")
     Lagging_Reactive_Power_kVarh = st.number_input("Lagging_Reactive_Power_kVarh")
@@ -70,4 +67,13 @@ if __name__=='__main__':
     main()
     
 
+# the font and background color, the padding and the text to be displayed
+html_temp = """
+<div style ="background-color:pink;padding:13px">
+<h1 style ="color:black;text-align:left;font-family:Lucida Calligraphy; color:Green; font-size: 18px;">Load Prediction of Steel Plant</h1>
+</div>
+"""  
+# this line allows us to display the front end aspects we have 
+# defined in the above code
+st.markdown(html_temp, unsafe_allow_html = True)
     
