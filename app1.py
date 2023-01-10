@@ -18,13 +18,10 @@ loaded_model = pickle.load(open('df.sav', 'rb'))
 with st.sidebar:
     
     selected = option_menu('Steel Plant Load Prediction',
-                          
-                          ['Introduction',
-                           'Basic EDA',
-                           'Steel Plant Load Prediction'],
-                          icons=['activity','heart','person'],
-                          default_index=0)
-
+                           ['Introduction','Basic EDA','Steel Plant Load Prediction'],
+                           icons=['activity','heart','person'],
+                           default_index=0)
+                           
 
 def steel_prediction(input_data):
 
