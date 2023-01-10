@@ -33,33 +33,17 @@ def steel_prediction(input_data):
     else:
         return 'Maximum Load'
     
-
-# this is the main function in which we define our webpage 
 def main():
-      
-    # the font and background color, the padding and the text to be displayed
-    html_temp = """
-    <div style ="background-color:pink;padding:13px">
-    <h1 style ="color:black;text-align:center;font-family:Lucida Calligraphy; color:Brown; font-size: 24px;">Steel Industry Load Prediction ML App </h1>
-    </div>
-    """  
-    # this line allows us to display the front end aspects we have 
-    # defined in the above code
-    st.markdown(html_temp, unsafe_allow_html = True)
-
-
-
-    # the following lines create text boxes in which the user can enter 
     
-    Usage_kWh = st.text_input("Usage_kWh")
-    Lagging_Reactive_Power_kVarh = st.text_input("Lagging_Reactive_Power_kVarh")
-    Leading_Reactive_Power_kVarh = st.text_input("Leading_Reactive_Power_kVarh")
-    CO2 = st.text_input("CO2")
-    Lagging_Power_Factor = st.text_input("Lagging_Power_Factor")
-    Leading_Power_Factor = st.text_input("Leading_Power_Factor")
-    NSM = st.text_input("NSM")
-    WeekStatus = st.text_input("WeekStatus")
-    Day_of_week = st.text_input("Day_of_week")
+    Usage_kWh = st.number_input("Usage_kWh")
+    Lagging_Reactive_Power_kVarh = st.number_input("Lagging_Reactive_Power_kVarh")
+    Leading_Reactive_Power_kVarh = st.number_input("Leading_Reactive_Power_kVarh")
+    CO2 = st.number_input("CO2")
+    Lagging_Power_Factor = st.number_input("Lagging_Power_Factor")
+    Leading_Power_Factor = st.number_input("Leading_Power_Factor")
+    NSM = st.number_input("NSM")
+    WeekStatus = st.number_input("WeekStatus")
+    Day_of_week = st.number_input("Day_of_week")
     
     # code for Prediction
     load = ''
