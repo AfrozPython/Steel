@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
+from streamlit_option_menu import option_menu
 
 # loading in the model to predict on the data
 loaded_model = pickle.load(open('df.sav', 'rb'))
