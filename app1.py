@@ -58,7 +58,7 @@ def main():
     load = ''
     # creating a button for Prediction
     
-    if st.button('Steel industry load prediction'):
+    if st.button('Steel industry load prediction[ PRESS BUTTON ]'):
         load = steel_prediction([Usage_kWh, Lagging_Reactive_Power_kVarh, Leading_Reactive_Power_kVarh, CO2, Lagging_Power_Factor, Leading_Power_Factor, NSM, WeekStatus, Day_of_week])
     st.success(load)
 
@@ -70,7 +70,7 @@ if __name__=='__main__':
 # the font and background color, the padding and the text to be displayed
 html_temp = """
 <div style ="background-color:yellow;padding:13px">
-<h1 style ="color:black;text-align:left;font-family:Lucida Calligraphy; color:Green; font-size: 18px;">Load Prediction of Steel Plant for the above data is</h1>
+<h1 style ="color:black;text-align:left;font-family:Lucida Calligraphy; color:Green; font-size: 18px;">Load Prediction of Steel Plant for the above data is above</h1>
 </div>
 """  
 # this line allows us to display the front end aspects we have 
