@@ -11,7 +11,7 @@ import pickle
 import streamlit as st
 
 # loading in the model to predict on the data
-loaded_model = pickle.load(open('ddf.sav', 'rb'))
+loaded_model = pickle.load(open('df.sav', 'rb'))
 
 
 def steel_prediction(input_data):
